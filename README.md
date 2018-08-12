@@ -24,7 +24,6 @@ Cum se foloseste :
 
 Probleme: shallow cloning and deep cloning
 - shallow cloning copie doar la suprafata obiectul - de exemplu, daca avem un obiect cu o referinta catre alt obiect, 
-	atunci clona lui va trimite catre aceeasi referinta. Atat obiectul de baza cat si copia au aceeasi referinta.
+	atunci clona lui va trimite catre aceeasi instanta a obiectului referinta. Atat obiectul de baza cat si copia au aceeasi  instanta a obiectului referinta.
 Problema intervine atunci cand vrem sa modificam proprietatile referintei unui obiect..Observam ca ambele obiecte vor suferi modificari.
-- deep cloning - rezolva problema de mai sus.. Fiecare obiect va face trimitere catre o referinta diferita . In acest caz, daca modificam proprietatile referintei 
-	unui obiect, celalalt va ramane neschimbat. Fiecare obiect va avea o instanta diferita a acelui obiect.
+- deep cloning - rezolva problema de mai sus.. Fiecare obiect va face trimitere catre o referinta diferita . In acest caz, daca modificam proprietatile referintei unui obiect, celalalt va ramane neschimbat. Fiecare obiect va avea o instanta diferita a acelui obiect de referinta.
